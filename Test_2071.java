@@ -9,15 +9,13 @@ public class Test_2071 {
 		int test_case = sc.nextInt();
 		for(int i=1;i<=test_case;i++) {
 			int sum = 0, result = 0;
-			double avg = 0.00;
+			double avg;
 			for(int j=1;j<=10;j++) {
 				int k = sc.nextInt();
 				sum += k;
 			}
-			System.out.println(sum);
 			avg = (double)sum / 10;
 			double kk = avg - (int)avg;
-			System.out.println(avg);
 			if(kk >= 0.5) {
 				result = (int)avg + 1;
 				System.out.println("#" + i + " " + result);
